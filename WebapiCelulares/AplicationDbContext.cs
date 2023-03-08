@@ -13,6 +13,7 @@ namespace WebapiCelulares
         }
 
         public DbSet<Celular> Celulares { get; set; }
+        public DbSet<Marca> Marcas { get; set; }
 
     }
 }

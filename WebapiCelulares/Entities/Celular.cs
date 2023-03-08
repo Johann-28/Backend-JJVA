@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Text.Json.Serialization;
 
 namespace WebapiCelulares.Entities
 {
@@ -9,5 +10,8 @@ namespace WebapiCelulares.Entities
         public string modelo { get; set; }
         public string descripcion { get; set; }
         public int id_marca { get; set; }
+
+        [JsonIgnore]
+        public Marca marca { get; set; }   
     }
 }
